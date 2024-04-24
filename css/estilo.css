@@ -39,6 +39,14 @@ body{
   font-family: 'Montserrat-Regular', sans-serif; 
 }
 
+.fontMontserratLight{
+  font-family: 'Montserrat-Light', sans-serif; 
+}
+
+.fontMontserrat500{
+  font-family: 'Montserrat-500', sans-serif; 
+}
+
 .fontOpenSans{
   font-family: 'OpenSans-Regular', sans-serif; 
 }
@@ -64,7 +72,47 @@ body{
   color: #C2C54C;
 }
 
-.flecha-sidebar {    
+.sidebar {
+  width: 35%;
+  font-family: 'Montserrat-Regular', sans-serif ;
+  opacity: 0.8; 
+  background-color:#ffffff; 
+  transition: 1s;
+}
+
+  
+.sidebar-item {
+  font-family: 'Montserrat-Regular', sans-serif ;
+  color:#000 !important;
+  text-align: start;
+  width: 100%;
+  font-size: 1.1rem;  
+  margin-top: 20px;
+  
+}
+
+
+.sidebar-item:hover {  
+  background-image: linear-gradient(100deg, #76871E,#ffffff);
+  background-size: 100%; 
+  transition: transform 800ms ease-in-out;
+  
+}
+
+.sidebar-item::after{
+  display:block;
+  content: '';
+  background-image: linear-gradient(100deg, #ffffff, #76871E);
+  transform: scaleX(0);  
+  transition: transform 800ms ease-in-out;
+}
+
+.sidebar-item:hover:after {
+  transform: scaleX(1);
+}
+
+
+.cruz-sidebar {    
   background: linear-gradient(90deg, #C2C54C, #76871E, #000000);
   font-size: 2.8rem;    
   -webkit-text-fill-color: transparent;
@@ -72,13 +120,14 @@ body{
   background-clip: text;    
 }
 
-.flecha-sidebar:hover {    
+.cruz-sidebar:hover {    
   background: linear-gradient(90deg, #000000, #76871E, #C2C54C);
   font-size: 2.8rem;    
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text; 
 }
+
 
 .icono-sobre-imagen {
   position: absolute;
@@ -133,10 +182,106 @@ body{
   line-height: 1.5;
 }
 
+.boton{
+  font-family: 'PlayfairDisplayRegular', sans-serif ;  
+  font-size: 1.2rem; 
+  padding: 10px 80px;
+  border: 0px;
+  color: black;
+  font-weight: bold;
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  display: inline-block;
+  transition: 0.9s;
+  box-shadow: 0px 1px 3px gray;
+}
+.boton:hover{
+  transform: scale(1);
+  letter-spacing: 2px;
+  background-color: #d3d3d3;
+  color: black;
+}
 
 
+.oregano {
+  background-image: url("../images/recorte.png");
+  background-repeat: repeat;
+  background-size: 100%;  
+}
+
+.fondo-verde-1 {
+  background-image: url("../images/fondo-verde-1.png"), url("../images/fondo-pared.png");
+  background-repeat: no-repeat, no-repeat;
+  background-color: #cccccc;
+}
 
 
+.foto-circulo {
+  width: 170px;
+  height: 170px;        
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  /*border: 2px solid #242c34;;*/
+}
+
+
+.foto-cuidado {
+  background-image: url(../images/cuidado.png);
+}
+
+.foto-hojas {
+  background-image: url(../images/hojas.png);
+}
+
+.foto-amor {
+  background-image: url(../images/amor.png);
+}
+
+.pie-de-pagina {
+  background-color: rgb(201, 196, 196);
+  margin-top: 0px;
+  text-align: start;
+  padding: 30px;    
+  --bs-gutter-x: 0rem;
+}
+
+.link-pie-de-pagina {
+  font-family: 'Montserrat-Regular', sans-serif;
+  color: black;
+  text-decoration: underline;
+}
+
+.link-pie-de-pagina:hover {
+  color: #76871E;
+  font-weight: bold;
+}
+
+.pipeline {
+  color: black; 
+  font-family: 'Montserrat-ExtraBold', sans-serif; 
+  font-size: 1.2rem; 
+}
+
+.pie-de-pagina2 {
+  background-color: rgb(201, 196, 196);
+  margin-top: 0px;
+  text-align: end;
+  padding: 30px; 
+  --bs-gutter-x: 0rem;
+}
+
+.red-pie-de-pagina {
+  font-size: 2rem; 
+  color: white;   
+}
+
+.red-pie-de-pagina:hover {
+  color: #76871E;
+}
+
+
+/*-------------------------------------------------------------*/
 /* la excelencia que nos eleva...*/
 .posicion-1 {
   position: absolute;
@@ -223,77 +368,7 @@ table.centrada {
   margin-right:15%;
 }
 
-.sidebar {
-  width: 40%;
-  font-family: 'Bellota-Regular', sans-serif ;
-  opacity: 1;
-  display:none; 
-  padding-top:120px; 
-  right:0; 
-  z-index:2;  
-}
 
-.sidebar-burger {
-  font-size: 2.2rem;       
-  background-color: transparent !important;
-  top: 0px;
-  right:0px;
-  width:auto; 
-  position: absolute; 
-  padding-top: 0px !important;
-}
-
-.sidebar-burger:hover {
-  color:#937f6b !important;    
-  background-color: transparent !important;
-}
-
-.sidebar-flecha {
-  background-color: transparent !important;
-  color:#937f6b !important;  
-  padding-top: 18px;  
-  padding-right: 25px;  
-}
-
-.sidebar-flecha:hover {
-  background-color: transparent !important;
-}
-
-
-
-.burger {        
-  background: linear-gradient(90deg, white, white, white);    
-  font-size: 4rem;    
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;    
-}
-
-.burger:hover {       
-  background: linear-gradient(45deg, white, white, white);    
-  font-size: 4rem;    
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;    
-}
-    
-.sidebar-item {
-  font-family: 'Bellota-Regular', sans-serif ;
-  font-size: 1.1rem;  
-  margin-top: 20px;
-  transition: 0.8s;
-}
-
-
-.sidebar-item:hover {
-  font-family: 'Bellota-Regular', sans-serif ;  
-  font-weight: bold;
-  color:#000 !important;
-  /*background-color:#c0ad98!important;*/
-  background-image: linear-gradient(135deg, #c0ad98,#000408);
-  background-size: 100%;
-  /*transition: transform 800ms ease-in-out;*/
-}
 
 
 .excelencia {
@@ -655,25 +730,15 @@ table.centrada-2 {
       width: 50%;
     }
     
-    .sidebar-burger {
-      font-size: 1.2rem; 
-    }
-    
-    .flecha-sidebar {
+      
+    .cruz-sidebar {
       font-size: 1.8rem;
     }
     
-    .flecha-sidebar:hover {    
+    .cruz-sidebar:hover {    
       font-size: 1.8rem;       
     }
-    
-    .burger {      
-        font-size: 1.8rem;
-    }
-
-    .burger:hover { 
-      font-size: 1.8rem; 
-    }
+ 
 
     .sidebar-item {
       font-size: 0.8rem;  
@@ -857,25 +922,7 @@ table.centrada-2 {
 /*------------------------ PANTALLA MUY GRANDE -------------------------------------*/
 @media screen and (min-width:1441px) {
 
-    .sidebar-burger {
-      font-size: 3rem; 
-    }
-
-    .burger { 
-      font-size: 6rem;
-    }
-
-    .burger:hover { 
-      font-size: 6rem; 
-    }
-
-    .sidebar-flecha {
-      background-color: transparent !important;
-      color:#937f6b !important;  
-      padding-top: 25px;  
-      padding-right: 60px;  
-    }
-
+     
     .logo-sobre-imagen {
       position: absolute;
       top: 1%;
@@ -893,11 +940,11 @@ table.centrada-2 {
       padding-top:220px;
     }
 
-    .flecha-sidebar {
+    .cruz-sidebar {
       font-size: 3.8rem;
     }
     
-    .flecha-sidebar:hover {    
+    .cruz-sidebar:hover {    
       font-size: 3.8rem;       
     }
 

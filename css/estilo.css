@@ -56,10 +56,10 @@ body{
 }
 
 
-.logo {
-  width: 70px;
-}
 
+.verde-muy-oscuro {
+  color: #506c34;
+}
 .verde-oscuro {
   color: #76871E;  
 }
@@ -72,10 +72,30 @@ body{
   color: #C2C54C;
 }
 
+.barra-logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+}
+
+.logo {
+  width: 70px;
+}
+
+.imagenDA {
+  width: 250px;
+}
+
+.textoDA {
+  font-weight: bold; 
+  font-size: 0.7rem; 
+  letter-spacing: 2px;
+}
+
 .sidebar {
   width: 35%;
   font-family: 'Montserrat-Regular', sans-serif ;
-  opacity: 0.8; 
+  opacity: 1; 
   background-color:#ffffff; 
   transition: 1s;
 }
@@ -87,8 +107,7 @@ body{
   text-align: start;
   width: 100%;
   font-size: 1.1rem;  
-  margin-top: 20px;
-  
+  margin-top: 20px;  
 }
 
 
@@ -147,6 +166,7 @@ body{
   line-height: 0.9;
   letter-spacing: 1px;
   margin-bottom: 10px;
+
 }
 
 .en-la-provincia-home {
@@ -195,6 +215,7 @@ body{
   transition: 0.9s;
   box-shadow: 0px 1px 3px gray;
 }
+
 .boton:hover{
   transform: scale(1);
   letter-spacing: 2px;
@@ -209,10 +230,51 @@ body{
   background-size: 100%;  
 }
 
-.fondo-verde-1 {
-  background-image: url("../images/fondo-verde-1.png"), url("../images/fondo-pared.png");
-  background-repeat: no-repeat, no-repeat;
-  background-color: #cccccc;
+.padding-lr-cuadros-verdes {
+  padding-left: 15%; 
+  padding-right: 15%;
+}
+
+.padding-bt-cuadros-verdes {
+  padding-top: 13%; 
+  padding-bottom: 13%;
+}
+
+.titulo-excelencia {
+  font-family: 'PlayfairDisplayRegular', sans-serif ;    
+  font-size: 2.8rem;
+  color: #ffffff;
+  line-height: 0.9;
+  letter-spacing: 1px;
+}
+
+.texto-excelencia {
+    font-family: 'Montserrat-Light', sans-serif ;    
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 1px;  
+}
+
+.linea-blanca {
+  background-color: #ffffff;
+  height: 3px;
+  max-width: 13%;  
+  padding: 0;
+  margin-left: 15%;
+}
+
+.cuadro-texto {
+  font-family: 'OpenSans-Regular', sans-serif; 
+  font-style: italic;
+  font-size: 2rem;
+  color:#ffffff;
+  padding: 6%;
+  margin-left: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-right: 20%;  
+  border: 3px solid;  
 }
 
 
@@ -238,37 +300,34 @@ body{
   background-image: url(../images/amor.png);
 }
 
+.cuadro-mapa {
+  padding: 40px;
+}
 .pie-de-pagina {
   background-color: rgb(201, 196, 196);
   margin-top: 0px;
-  text-align: start;
   padding: 30px;    
   --bs-gutter-x: 0rem;
 }
 
-.link-pie-de-pagina {
-  font-family: 'Montserrat-Regular', sans-serif;
-  color: black;
-  text-decoration: underline;
-}
-
-.link-pie-de-pagina:hover {
-  color: #76871E;
-  font-weight: bold;
-}
-
 .pipeline {
-  color: black; 
+  color: #76871E;
   font-family: 'Montserrat-ExtraBold', sans-serif; 
   font-size: 1.2rem; 
 }
 
-.pie-de-pagina2 {
-  background-color: rgb(201, 196, 196);
-  margin-top: 0px;
-  text-align: end;
-  padding: 30px; 
-  --bs-gutter-x: 0rem;
+.pie-item {
+  font-family: 'Montserrat-Regular', sans-serif ;
+  font-size: 1rem;  
+  text-decoration: none;
+  }
+
+.pie-item:hover {
+  font-family: 'Montserrat-Regular', sans-serif ;  
+  color: #76871E;
+  font-weight: bold;
+  background-color:transparent !important;
+  border-bottom: solid 2px #76871E;    
 }
 
 .red-pie-de-pagina {
@@ -277,9 +336,13 @@ body{
 }
 
 .red-pie-de-pagina:hover {
-  color: #76871E;
+  background: linear-gradient(90deg, #000000, #76871E, #C2C54C);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; 
+  /*color: #76871E;
+  transform: scale(1.2);*/
 }
-
 
 /*-------------------------------------------------------------*/
 /* la excelencia que nos eleva...*/
@@ -369,103 +432,6 @@ table.centrada {
 }
 
 
-
-
-.excelencia {
-  background-color: #242c34;
-  background-image: linear-gradient(135deg, #242c34,#36424e);
-}
-
-
-
-.imagen-azul {
-  padding-top: 2%;
-}
-
-table.centrada-2 {
-  width:40%; 
-  margin-left:30%; 
-  margin-right:30%;
-}
-
-.barra-sobre-imagen-excelencia {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  height: 15% ;  
-  opacity: 0.8;
-  border: 0px solid transparent;
-  background-image: linear-gradient(0.25turn, #25201c,#937f6b, #25201c);    
-}
-
-
-.texto-promesa {
-  color:#ffffff;
-  font-family: 'Bellota-Light', sans-serif ;
-  font-size: 1rem;
-  padding-left: 15%;
-  padding-right: 15%;
-  line-height: 2;
-  letter-spacing: 1px;
-  padding-top: 2%;
-  padding-bottom: 2%;  
-}
-
-.texto-buscamos-1 {
-  font-family: 'Bellota-Light', sans-serif ;  
-  color: white;
-  padding-left: 10%;
-  padding-top: 10%;
-}
-
-.guion-excelencia {
-  padding-left: 10%; 
-  padding-top:5%;
-}
-
-.texto-buscamos-2 {
-  font-family: 'Bellota-Light', sans-serif ;  
-  color: white;
-  padding-left: 10%;
-  padding-top: 5%;
-}
-
-.trayectoria {
-  background-image: url('../images/home/fondoGE.jpg');
-  background-size: cover ;
-}
-
-.texto-trayectoria-1 {
-  color:#000;
-  font-family: 'Bellota-Bold-Italic', sans-serif ;
-  line-height: 1.5;   
-  padding-top: 15%;       
-}
-
-.texto-trayectoria-2 {
-  color:#000;
-  font-family: 'Bellota-Bold', sans-serif ;
-  line-height: 1.5;        
-}
-
-.texto-trayectoria-3 {
-  color:#000;
-  font-family: 'Bellota-Bold-Italic', sans-serif ;
-  line-height: 1.5; 
-}
-
-
-
-.cada-logo {
-  width:120px; 
-  height: 120px;
-}
-
-.logo-remax {
-  width:190px; 
-  height: 120px;
-}
-
 .equipoejecutivo {
   background-color: #242c34;
   background-image: linear-gradient(135deg, #242c34,#36424e);
@@ -536,72 +502,6 @@ table.centrada-2 {
   transform: scaleX(0.8);
 }
 
-.equipo-card-cargo {    
-  font-size: 1.1rem;
-}
-
-/*.equipo-card-cargo::after{
-  font-family: 'Bellota-Regular', sans-serif ;  
-  display:block;
-  content: '';
-  border-bottom: solid 2px #c0ad98; 
-  transform: scaleX(0);  
-  transition: transform 800ms ease-in-out;
-}
-
-.equipo-card-cargo:hover:after {
-  transform: scaleX(0.6);
-}*/
-
-.equipo-card-texto {    
-  font-size:1.1rem; 
-  padding-left: 10%; 
-  padding-right: 10%;
-}
-
-.equipo-card-circulo {
-  width: 150px;
-  height: 150px;        
-  background-size: cover;
-  border-radius: 50%;
-  margin: 0 auto;
-  /*border: 2px solid #242c34;;*/
-}
-
-
-.equipo-foto-1 {
-  background-image: url(../images/home/imgSebastianVillalba.png);
-}
-
-.equipo-foto-2 {
-  background-image: url(../images/home/imgNataliaRodriguez.jpg);
-}
-
-.equipo-foto-4 {
-  background-image: url(../images/home/logo.png);
-}
-
-.equipo-foto-3 {
-  background-image: url(../images/home/logo.png);
-}
-
-.texto-equipo {
-  color:#ffffff;
-  font-family: 'Bellota-Regular', sans-serif ;
-  font-size: 1.2rem;
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-  line-height: 2;
-  letter-spacing: 2px;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.contacto {
-  background-image: url('../images/home/FondoContacto.png');
-  background-size: cover;
-}
 
 .linea-iconos-contacto {
   position: relative; 
@@ -615,87 +515,7 @@ table.centrada-2 {
   letter-spacing: 80px;
   width:100%;
 }
-
-.icono-contacto {
-  width:36px;
-  height: auto;
-}
-
-.icono-contacto-mediano {
-  width: 45px;
-  height: auto;
-}
-
-.icono-contacto-grande {
-  width: 50px;
-  height: auto;
-}
-
-.texto-contacto {
-    font-family: 'Bellota-Regular', sans-serif;
-    font-size: 0.8rem;
-    color: white;
-    letter-spacing: 2px;
-}
-
-.link-icono-contacto {
-  text-decoration: none;
-}
-
-.link-icono-contacto:hover {
-  text-decoration: none;
-  color:white;
-}
-
-.tres-puntos {
-  padding-top: 40px;
-}
-
-.pie {
-  background-image: url('../images/home/fondoFooter.png');
-  background-size: cover;
-  color: white;
-  font-family: 'Bellota-Regular', sans-serif;
-  font-size: 0.8rem;
-  padding-top: 0%;
-  padding-bottom: 6%;
-}
-
-.pie-grupo {
-  padding-left: 18%;
-  padding-top: 2%;
-}
-
-.pie-location {
-  width:70px;
-  height: auto;
-}
-
-.pie-titulo {
-  font-size: 1rem !important; 
-  letter-spacing: 2px;
-}
-
-.zoom-pie {
-  transition: transform .8s; 
-}
-
-.zoom-pie:hover {
-  font-weight: bold;
-  font-style: italic; 
-}
-
   
-.texto-degrade {
-  background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));
-  font-family: 'Bellota-Regular', sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 5px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
 .zoom {
   transition: transform .8s; 
 }
@@ -705,22 +525,9 @@ table.centrada-2 {
 }
 
 
-
-
-
-/*----------------------------------------------------------------------------------------------------*/
-
+/*--------------------------------------------- CELULAR -------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
-
-    .barra-sobre-imagen {
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      width: 100% !important;
-      height: 20% !important;        
-    }
-
 
     .logo {
       width: 50px;
@@ -761,108 +568,7 @@ table.centrada-2 {
       from {top: 64%; color:transparent;}
       to {top: 61%; color: white;}
     }
-    
-    .posicion-3 {
-      position: absolute;
-      top: 50%;
-      left: 58%; 
-      color:rgb(51, 50, 50);       
-    }
-    
-    .posicion-4 {
-      position: absolute;
-      top: 47%;    
-      color: white;    
-    }
 
-    .logo-excelencia {
-      width: 20%;    
-    }
-
-    .imagen-azul {
-      padding-top: 2%;
-    }
-
-    .texto-buscamos-1 {      
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-    
-    .guion-excelencia {
-      padding-left: 10%; 
-      padding-top:10%;
-    }
-
-    .texto-buscamos-2 {
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-top: 10%;
-      padding-bottom: 10%;
-    }
-
-    .texto-promesa {      
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-top: 10%;
-      padding-bottom: 10%;
-    }
-
-    .trayectoria {
-      background-image: url('../images/home/fondoGE_mobile.jpg');
-      /*background-size: cover ;*/
-      width: 100%;
-    }
-
-    .texto-trayectoria-1 {      
-      padding-top: 35%;     
-      padding-left: 8%;
-      padding-right: 8%;
-    }  
-
-    .texto-trayectoria-2 {      
-      padding-left: 8%;
-      padding-right: 8%;  
-    } 
-    
-    .texto-trayectoria-3 {      
-      padding-left: 8%;
-      padding-right: 8%;  
-    } 
-
-    .logos-trayectoria {
-      padding-top: 60px; 
-      padding-bottom: 60px; 
-      display: flex; 
-      justify-content: space-between; 
-      margin-left: 8%; 
-      margin-right: 8%;            
-    }
-    
-    .cada-logo {
-      width:90px; 
-      height: 90px;
-    }
-    
-    .logo-remax {
-      width:140px; 
-      height: 90px;
-    }
-
-    .texto-equipo {
-      font-size: 1rem;
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-    }
-
-    .equipo-card-nombre:hover:after {
-      transform: scaleX(0.6);
-    }
-
-    /*.equipo-card-cargo:hover:after {
-      transform: scaleX(0.3);
-    }*/
 
     .linea-iconos-contacto {
       position: relative; 
@@ -876,63 +582,34 @@ table.centrada-2 {
       letter-spacing: 80px;
       width:100%;
     }
-    
-    .icono-contacto {
-      width:24px;
-      height: auto;
-    }
-    
-    .icono-contacto-mediano {
-      width: 36px;
-      height: auto;
-    }
-    
-    .icono-contacto-grande {
-      width: 40px;
-      height: auto;
-    }
 
-    .texto-contacto {
-      font-size: 0rem;   
-    }
 
-    .tres-puntos {
-      padding-top: 0px;
-    }
-
-    .pie-grupo {
-      padding-left: 21%;
-      padding-top: 2%;
-    }
-
-    .texto-degrade {
-      background: linear-gradient(90deg, rgb(39, 39, 39), white, rgb(39, 39, 39));
-      font-family: 'Bellota-Regular', sans-serif;
-      font-size: 1.2rem;
-      letter-spacing: 5px;
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
 
 }
-
 
 
 /*------------------------ PANTALLA MUY GRANDE -------------------------------------*/
 @media screen and (min-width:1441px) {
 
      
-    .logo-sobre-imagen {
-      position: absolute;
-      top: 1%;
-      left: 3%;
-      width:30%;
-      height: auto;
+    .barra-logo {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 100px;
     }
 
     .logo {
-      width: 100px;      
+      width: 120px;      
+    }
+       
+    .imagenDA {
+      width: 330px;
+    }
+
+    .textoDA {
+      font-weight: bold; 
+      font-size: 1rem; 
+      letter-spacing: 2px;
     }
 
     .sidebar {
@@ -959,130 +636,21 @@ table.centrada-2 {
       letter-spacing: 1px;
     }
 
-        
-    .texto-promesa {  
-      line-height: 2;
-      letter-spacing: 2px;
-      padding-top: 2%;
-      padding-bottom: 2%;
+    .texto-home {
+      position: absolute;
+      top: 250px;
+    }
+
+    .nos-encontramos-home {
+      font-size: 4.5rem;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+
+    .en-la-provincia-home {      
       font-size: 1.5rem;
     }
 
-    .texto-buscamos-1 {
-      font-family: 'Bellota-Light', sans-serif ;  
-      color: white;
-      font-size: 1.5rem;
-      padding-left: 10%;
-      padding-top: 10%;
-    }
-
-    .guion-excelencia {
-      padding-left: 10%; 
-      padding-top:5%;
-    }
-
-    .texto-buscamos-2 {
-      font-family: 'Bellota-Light', sans-serif ;  
-      color: white;
-      font-size: 1.5rem;
-      padding-left: 10%;
-      padding-top: 5%;
-    }
-
-    .texto-degrade {
-      font-size: 2.7rem;
-      letter-spacing: 6px;      
-    }
-
-    .texto-trayectoria-1 {      
-      padding-top: 15%;     
-      padding-left: 8%;
-      padding-right: 8%;
-      font-size: 1.8rem;
-    }  
-
-    .texto-trayectoria-2 {      
-      padding-left: 8%;
-      padding-right: 8%;  
-      font-size: 1.8rem;
-    } 
-    
-    .texto-trayectoria-3 {      
-      padding-left: 8%;
-      padding-right: 8%; 
-      font-size: 1.8rem; 
-    } 
-
-    .logos-trayectoria {
-      padding-top: 60px; 
-      padding-bottom: 60px; 
-      display: flex; 
-      justify-content: space-between; 
-      margin-left: 28%; 
-      margin-right: 28%;            
-    }
-    
-    .cada-logo {
-      width:180px; 
-      height: 180px;
-    }
-    
-    .logo-remax {
-      width:300px; 
-      height: 200px;
-    }
-
-    .texto-equipo {
-      font-size: 1.7rem;
-    }
-
-    .equipo-card-nombre:hover:after {
-      transform: scaleX(0.5);
-    }
-
-    /*.equipo-card-cargo:hover:after {
-      transform: scaleX(0.4);
-    }*/
-        
-    .icono-contacto {
-      width:40px;
-      height: auto;
-    }
-    
-    .icono-contacto-mediano {
-      width: 50px;
-      height: auto;
-    }
-    
-    .icono-contacto-grande {
-      width: 60px;
-      height: auto;
-    }
-
-    .texto-contacto {
-      font-size: 1.3rem;   
-    }
-
-    .pie {
-      font-size: 1.4rem;
-      padding-top: 0%;
-      padding-bottom: 6%;
-    }
-
-    .pie-titulo {
-      font-size: 1.5rem !important; 
-      letter-spacing: 2px;
-    }
-
-    
-    .pie-grupo {
-      padding-left: 18%;
-      padding-top: 2%;
-    }
-
-    .pie-location {
-      width:90px;
-      height: auto;
-    }
+   
 }
 

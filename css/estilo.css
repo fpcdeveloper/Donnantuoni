@@ -55,8 +55,6 @@ body{
    font-family: 'PlayfairDisplayRegular', sans-serif;
 }
 
-
-
 .verde-muy-oscuro {
   color: #506c34;
 }
@@ -70,6 +68,11 @@ body{
 
 .verde-claro {
   color: #C2C54C;
+}
+
+.separador {
+  width: 100%;
+  height: 40px;
 }
 
 .barra-logo {
@@ -93,50 +96,30 @@ body{
 }
 
 .sidebar {
-  width: 35%;
-  font-family: 'Montserrat-Regular', sans-serif ;
+  width: 35% !important;
+  font-family: 'Montserrat-Regular', sans-serif !important;
   opacity: 1; 
   background-color:#ffffff; 
-  transition: 1s;
+  transition: 1.5s;
 }
 
-  
-.sidebar-item {
-  font-family: 'Montserrat-Regular', sans-serif ;
-  color:#000 !important;
-  text-align: start;
-  width: 100%;
-  font-size: 1.1rem;  
-  margin-top: 20px;  
+.burger {
+  width: 100px; 
+  padding-right: 30px; 
 }
 
-
-.sidebar-item:hover {  
-  background-image: linear-gradient(100deg, #76871E,#ffffff);
-  background-size: 100%; 
-  transition: transform 800ms ease-in-out;
-  
+.cruz {
+  padding-top: 50px;
+  padding-right: 50px;
 }
-
-.sidebar-item::after{
-  display:block;
-  content: '';
-  background-image: linear-gradient(100deg, #ffffff, #76871E);
-  transform: scaleX(0);  
-  transition: transform 800ms ease-in-out;
-}
-
-.sidebar-item:hover:after {
-  transform: scaleX(1);
-}
-
 
 .cruz-sidebar {    
   background: linear-gradient(90deg, #C2C54C, #76871E, #000000);
   font-size: 2.8rem;    
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;    
+  background-clip: text; 
+  width: 100px;  
 }
 
 .cruz-sidebar:hover {    
@@ -147,11 +130,35 @@ body{
   background-clip: text; 
 }
 
+li {  
+  width: 100%;
+}
+
+.sidebar-item {
+  font-family: 'Montserrat-Regular', sans-serif !important;
+  font-size: 1.1rem; 
+  text-decoration: none;
+  color:#242c34;    
+  transition: 1s;
+  padding: 16px 8px;
+  display:inline-block;
+  width: 100%;
+}
+
+
+.sidebar-item:hover {
+  background-color: black !important;
+  background-image: linear-gradient(135deg, #76871E,#ffffff);
+  background-size:100%; 
+  width: 100%;
+}
+
 
 .icono-sobre-imagen {
   position: absolute;
-  top: 100px;
-  right: 30px;
+  top: 40px;
+  right: 60px;
+  width: 60px;  
 }
 
 .texto-home {
@@ -187,6 +194,7 @@ body{
   transition: opacity 0s 3s;  
 }
 
+/* NUESTRA EMPRESA */
 
 .titulo-fundador {
   font-family: 'PlayfairDisplayRegular', sans-serif ;    
@@ -200,44 +208,72 @@ body{
   font-family: 'Montserrat-500', sans-serif ;    
   font-size: 1rem;
   line-height: 1.5;
+  color: #76871E;  
+}
+
+.bg-fundador {
+  background-image: url(../images/fundador.jpg); 
+  background-size: cover;
+  height: 600px;
+}
+
+.texto-fundador-ejemplo {
+  font-family: 'PlayfairDisplayRegular', sans-serif;
+  font-size: 1.8rem; 
+  color:rgb(80, 77, 77);
+  padding-top: 150px;
+  padding-left: 550px;
+}
+
+.cita-fundador {
+  padding-left: 550px;
+  margin-top: 20px;
+}
+
+.inchausti-fundador {
+  font-family: 'PlayfairDisplayRegular', sans-serif;
+  font-size: 1.1rem;
+  font-style: italic; 
+  font-weight: bold;
 }
 
 .boton{
   font-family: 'PlayfairDisplayRegular', sans-serif ;  
-  font-size: 1.2rem; 
-  padding: 10px 80px;
+  font-size: 1.4rem; 
+  padding: 10px;
   border: 0px;
   color: black;
   font-weight: bold;
-  background-color: #f1f1f1;
-  margin: 10px 0;
   display: inline-block;
   transition: 0.9s;
   box-shadow: 0px 1px 3px gray;
+  width: 250px !important; 
+  background-color: #d3d3d3; 
 }
 
 .boton:hover{
   transform: scale(1);
   letter-spacing: 2px;
   background-color: #d3d3d3;
-  color: black;
+  color: #506c34;
 }
 
-
+/* fondo */
 .oregano {
   background-image: url("../images/recorte.png");
   background-repeat: repeat;
   background-size: 100%;  
 }
 
+/* cuadros verdes */
 .padding-lr-cuadros-verdes {
-  padding-left: 15%; 
-  padding-right: 15%;
+  padding-left: 12%; 
+  padding-right: 12%;
 }
 
 .padding-bt-cuadros-verdes {
-  padding-top: 13%; 
-  padding-bottom: 13%;
+  padding-top: 12%; 
+  padding-bottom: 12%;
 }
 
 .titulo-excelencia {
@@ -247,6 +283,7 @@ body{
   line-height: 0.9;
   letter-spacing: 1px;
 }
+
 
 .texto-excelencia {
     font-family: 'Montserrat-Light', sans-serif ;    
@@ -261,7 +298,7 @@ body{
   height: 3px;
   max-width: 13%;  
   padding: 0;
-  margin-left: 15%;
+  margin-left: 12%;
 }
 
 .cuadro-texto {
@@ -277,16 +314,29 @@ body{
   border: 3px solid;  
 }
 
+/* EL OREGANO */
+
+.texto-infaltable {
+  font-family: 'PlayfairDisplayRegular', sans-serif ; 
+  font-size: 2rem; 
+  color: white;
+}
+
+.texto-nos-define {
+  font-family: 'PlayfairDisplayRegular', sans-serif ; 
+  font-style: italic; 
+  font-weight: bold; 
+  font-size: 1.8rem;
+}
 
 .foto-circulo {
-  width: 170px;
-  height: 170px;        
+  width: 200px;
+  height: 200px;        
   background-size: cover;
   border-radius: 50%;
   margin: 0 auto;
   /*border: 2px solid #242c34;;*/
 }
-
 
 .foto-cuidado {
   background-image: url(../images/cuidado.png);
@@ -299,6 +349,32 @@ body{
 .foto-amor {
   background-image: url(../images/amor.png);
 }
+
+.linea-verde {
+  background-color: #76871E;  
+  height: 3px;
+  max-width: 10%;  
+  padding: 0;
+  margin: 100px;
+}
+
+.texto-circulo-verde {
+  font-family: 'Montserrat-500', sans-serif ;    
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #76871E;  
+  border-bottom: 2px solid #76871E;
+  margin: 100px;
+}
+      
+.texto-circulo {
+  font-family: 'PlayfairDisplayRegular', sans-serif ; 
+  font-style: italic; 
+  font-weight: bold; 
+  font-size: 1rem;
+}
+
+/* CONTACTENOS */
 
 .cuadro-mapa {
   padding: 40px;
@@ -529,68 +605,17 @@ table.centrada {
 
 @media screen and (max-width: 768px) {
 
-    .logo {
-      width: 50px;
-    }
-
-    .sidebar {
-      width: 50%;
-    }
-    
-      
-    .cruz-sidebar {
-      font-size: 1.8rem;
-    }
-    
-    .cruz-sidebar:hover {    
-      font-size: 1.8rem;       
-    }
- 
-
-    .sidebar-item {
-      font-size: 0.8rem;  
-    }
-
-    .letras-sobre-imagen-home {
-      font-size: 1rem;
-      line-height: 1.2;
-      letter-spacing: 1px;
-    }
-      
-    .posicion-2 {
-      position: absolute;
-      top: 61%;
-      left: 12%;    
-      color: white;  
-    }
-
-    @keyframes mov2-animation {
-      from {top: 64%; color:transparent;}
-      to {top: 61%; color: white;}
-    }
-
-
-    .linea-iconos-contacto {
-      position: relative; 
-      display: inline-block;
-      top: 35%; 
-      padding-bottom: 10%; 
-      left: 0px;
-      text-align: center;
-      color: white; 
-      font-size: 4rem; 
-      letter-spacing: 80px;
-      width:100%;
-    }
-
-
 
 }
 
 
-/*------------------------ PANTALLA MUY GRANDE -------------------------------------*/
+/*------------------------ PANTALLA HD -------------------------------------*/
 @media screen and (min-width:1441px) {
 
+  .separador {
+    width: 100%;
+    height: 70px;
+  }
      
     .barra-logo {
       padding-top: 30px;
@@ -601,7 +626,7 @@ table.centrada {
     .logo {
       width: 120px;      
     }
-       
+
     .imagenDA {
       width: 330px;
     }
@@ -612,9 +637,15 @@ table.centrada {
       letter-spacing: 2px;
     }
 
-    .sidebar {
-      width: 45%;
-      padding-top:220px;
+
+    .burger {
+      width: 130px; 
+      padding-right: 30px; 
+    }
+        
+    .cruz {
+      padding-top: 70px;
+      padding-right: 60px;
     }
 
     .cruz-sidebar {
@@ -626,14 +657,21 @@ table.centrada {
     }
 
     .sidebar-item {
-      font-size: 1.7rem;  
-      margin-top: 40px;
+      font-family: 'Montserrat-Regular', sans-serif;
+      font-size: 1.7rem;
     }
 
     .letras-sobre-imagen-home {      
       font-size: 3rem;
       line-height: 1.2;
       letter-spacing: 1px;
+    }
+
+    .icono-sobre-imagen {
+      position: absolute;
+      top: 40px;
+      right: 65px;
+      width: 80px;  
     }
 
     .texto-home {
@@ -651,6 +689,100 @@ table.centrada {
       font-size: 1.5rem;
     }
 
-   
+    /* NUESTRA EMPRESA */
+
+    .titulo-fundador {
+      font-size: 3.8rem;
+    }
+
+    .texto-fundador {  
+      font-size: 1.8rem;
+    }
+
+    .bg-fundador {
+      background-image: url(../images/fundador.jpg); 
+      background-size: cover;
+      height: 800px;
+    }
+
+    .texto-fundador-ejemplo {
+      font-size: 2.5rem;      
+      padding-top: 200px;
+      padding-left: 750px;
+    }
+
+    .cita-fundador {
+      padding-left: 750px;
+      margin-top: 35px;
+    }
+
+    .inchausti-fundador {
+      font-family: 'PlayfairDisplayRegular', sans-serif;
+      font-size: 2rem;
+    }
+
+    .boton{
+      font-family: 'PlayfairDisplayRegular', sans-serif ;  
+      font-size: 2.4rem; 
+      padding: 12px; 
+      width: 400px !important;
+    }
+
+    /* cuadros verdes */
+
+    .titulo-excelencia {
+      font-family: 'PlayfairDisplayRegular', sans-serif ;    
+      font-size: 3.8rem;
+    }
+
+    .texto-excelencia {
+        font-family: 'Montserrat-Light', sans-serif ;    
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 1px;  
+    }
+
+    .cuadro-texto {
+      font-family: 'OpenSans-Regular', sans-serif; 
+      font-style: italic;
+      font-size: 2.8rem;
+    }
+      
+    /* EL OREGANO */
+
+    .texto-infaltable {
+      font-family: 'PlayfairDisplayRegular', sans-serif ; 
+      font-size: 2.8rem; 
+    }
+
+    .texto-nos-define {
+      font-family: 'PlayfairDisplayRegular', sans-serif ; 
+      font-size: 2.6rem;
+    }
+
+    .foto-circulo {
+      width: 300px;
+      height: 300px;        
+      background-size: cover;
+      border-radius: 50%;
+      margin: 0 auto;
+      /*border: 2px solid #242c34;;*/
+    }
+
+    .texto-circulo {
+      font-family: 'PlayfairDisplayRegular', sans-serif ; 
+      font-size: 1.8rem;
+    }
+
+    .texto-circulo-verde {
+      font-family: 'Montserrat-500', sans-serif ;    
+      font-size: 1.8rem;
+      line-height: 1.5;
+      color: #76871E;  
+      border-bottom: 2px solid #76871E;
+      margin: 100px;
+    }
+    
+    /* CONTACTENOS */
 }
 

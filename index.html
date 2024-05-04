@@ -91,7 +91,7 @@
             <div class="carousel-item active">
                 <div class="icono-sobre-imagen">
                     <a href="">
-                        <img src="images/icono_whatsapp.png" style="width:100%;">
+                        <i class="bi bi-whatsapp whatsapp-carousel"></i>
                     </a>
                 </div>
                 <img src="images/home1.jpg" class="d-block w-100" >                
@@ -111,7 +111,7 @@
             <div class="carousel-item">
                 <div class="icono-sobre-imagen">
                     <a href="">
-                        <img src="images/icono_whatsapp.png" style="width:100%;">
+                        <i class="bi bi-whatsapp whatsapp-carousel-verde"></i>
                     </a>
                 </div>
                 <img src="images/home2.jpg" class="d-block w-100">
@@ -131,7 +131,7 @@
             <div class="carousel-item">
                 <div class="icono-sobre-imagen">
                     <a href="">
-                        <img src="images/icono_whatsapp.png" style="width:100%;">
+                        <i class="bi bi-whatsapp whatsapp-carousel"></i>
                     </a>
                 </div>
                 <img src="images/home3.jpg" class="d-block w-100">
@@ -163,11 +163,13 @@
           su llegada a Argentina a los 7 años.
       </p>
       <div class="bg-fundador">
-          <p class="texto-fundador-ejemplo" data-aos="fade-zoom-in" data-aos-duration="3000">
+          <p class="texto-fundador-ejemplo" 
+                data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="500">
               <i><b>Es un ejemplo de perseverancia y &eacute;xito que<br>
               perdurar&aacute; a trav&eacute;s de las generaciones.</b></i>
           </p>
-          <img src="images/fundador_linea.png" class="cita-fundador">
+          <img src="images/fundador_linea.png" class="cita-fundador" 
+                data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="500">
       </div>
       <div class="text-center pt-5">
           <p class="inchausti-fundador">
@@ -193,8 +195,8 @@
 
       <!-- EXCELENCIA Y CALIDAD -->
       <div class="row m-0">
-          <div class="col col-6 m-0 p-0" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">
-              <div style="padding-top: 15%; width: 110%; z-index:2; position: relative;">
+          <div class="col col-6 m-0 p-0" data-aos="fade-right" data-aos-offset="100" data-aos-duration="3000">
+              <div class="div-imagen-excelencia">
                   <div class="padding-bt-cuadros-verdes" style="background-image: url(images/fondo-verde-1.png);">
                       <p class="titulo-excelencia pt-5 padding-lr-cuadros-verdes">
                           EXCELENCIA Y CALIDAD
@@ -226,8 +228,8 @@
                 e internacional"
             </p>                        
         </div>
-        <div class="col col-6 m-0 p-0" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500">
-            <div style="padding-top: 15%; width: 110%; z-index:3; position: relative; margin-left: -10%;">
+        <div class="col col-6 m-0 p-0" data-aos="fade-left" data-aos-offset="100" data-aos-duration="3000">
+            <div class="div-imagen-trayectoria">
                 <div class="padding-bt-cuadros-verdes" style="background-image: url(images/fondo-verde-2.png);">
                     <p class="titulo-excelencia pt-5 padding-lr-cuadros-verdes">
                         TRAYECTORIA
@@ -250,7 +252,6 @@
             <p class="titulo-fundador text-center pt-5">
                 EL OR&Eacute;GANO
             </p> 
-
             <p class="texto-fundador text-center pt-3 pb-5">
                 DE INCONFUNDIBLE AROMA E INIGUALABLE SABOR, APORTA UNA INTENSA PERSONALIDAD<BR>
                 AROM&Aacute;TICA A LAS PREPARACIONES EN LAS QUE PARTICIPA COMO INGREDIENTE.
@@ -272,17 +273,18 @@
         <!-- separador -->
         <div class="separador"></div>
 
-        <!-- cuenco con vapor y texto -->
+        
+        <!-- cuenco con vapor y texto -->        
         <div class="row m-0">
             <div class="col col-1 m-0 p-0"></div>
 
             <div class="col col-4 m-0 p-0">
-                <img src="images/vapor.jpg" style="width: 100%;">
+                <img src="images/vapor.jpg" class="imagen-vapor">
             </div>
             
             <div class="col col-6 m-0 p-0" style="display:flex; flex-direction: column;">
 
-                <div class="row" style="padding-left: 40px; margin-right: 0px;">
+                <div class="row infaltable">
                     <div class="col col-12" style="background-color: #506c34;">
                         <p class="texto-infaltable text-center pt-5 pb-5" 
                         data-aos="flip-up" data-aos-offset="100" data-aos-duration="2500">
@@ -293,13 +295,14 @@
                 </div>                
                 <div class="row mt-4">
                     <div class="col col-12" >
-                        <img src="images/oregano2.png" style="width: 100%; padding-left: 30px;">
+                        <img src="images/oregano2.png" class="imagen-oregano-horizontal">
                     </div>
                 </div>
             </div>
 
             <div class="col col-1 m-0 p-0"></div>
         </div>
+        
 
         <!-- separador -->
         <div class="separador"></div>
@@ -312,59 +315,79 @@
 
         <div class="text-center pt-5 ">
             <table class="w-100">
-                <tr data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1500">
+                <tr >
+                <!--<tr data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1500">-->
                     <td style="width: 13%;"></td>
-                    <td style="width: 25%;"><div class="foto-circulo foto-cuidado "></div>  </td>
-                    <td style="width: 25%;"><div class="foto-circulo foto-hojas "></div>  </td>
-                    <td style="width: 25%;"><div class="foto-circulo foto-amor "></div>  </td>
-                    <td style="width: 12%;"></td>
+                    <td style="width: 20%;">
+                        <div class="foto-circulo foto-cuidado" 
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        </div>  
+                    </td>
+                    <td style="width: 7%;"></td>
+                    <td style="width: 20%;">
+                        <div class="foto-circulo foto-hojas" 
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        </div>  
+                    </td>
+                    <td style="width: 7%;"></td>
+                    <td style="width: 20%;">
+                        <div class="foto-circulo foto-amor" 
+                            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                        </div>  
+                    </td>
+                    <td style="width: 13%;"></td>
                 </tr>
                 <tr>
-                    <td style="width: 13%;"></td>
-                    <td style="width: 25%;" class="pt-4 texto-circulo-verde text-center">
+                    <td style="width: 13%;"></td>                    
+                    <td style="width: 20%;" class="pt-4 texto-circulo-verde text-center">
                         CUIDADO
                     </td>
-                    <td style="width: 25%;" class="pt-4 texto-circulo-verde text-center">
+                    <td style="width: 7%;"></td>
+                    <td style="width: 20%;" class="pt-4 texto-circulo-verde text-center">
                         HOJAS
                     </td>
-                    <td style="width: 25%;" class="pt-4 texto-circulo-verde text-center">
+                    <td style="width: 7%;"></td>
+                    <td style="width: 20%;" class="pt-4 texto-circulo-verde text-center">
                         AMOR
                     </td>                    
-                    <td style="width: 12%;"></td>
+                    <td style="width: 13%;"></td>
                 </tr>
-               
                 <tr>
                     <td style="width: 13%;"></td>
-                    <td style="width: 25%;" class="texto-circulo pt-4 text-center">
+                    <td style="width: 20%;" class="texto-circulo pt-4 text-center">
                         de nuestros cultivos
                     </td>
-                    <td style="width: 25%;" class="texto-circulo pt-4 text-center">
+                    <td style="width: 7%;"></td>
+                    <td style="width: 20%;" class="texto-circulo pt-4 text-center">
                         finamente seleccionadas
                     </td>
-                    <td style="width: 25%;" class="texto-circulo pt-4 text-center">
+                    <td style="width: 7%;"></td>
+                    <td style="width: 20%;" class="texto-circulo pt-4 text-center">
                         por nuestro trabajo
                     </td>                                      
-                    <td style="width: 12%;"></td>
+                    <td style="width: 13%;"></td>
                 </tr>                
             </table>            
         </div>
 
+        <div class="separador"></div>
+
         <div class="text-center pt-5 pb-5">
-            <button type="button" class="boton" 
-                sytle="width: 200px !important; background-color: #d3d3d3; border:0px;">
+            <button type="button" class="boton">
                 <i>m&aacute;s info</i>
             </button>
         </div>   
     </div>
 
+    <div class="separador"></div>
     <a name="sustentable"></a>
     <!-- CULTIVO SUSTENTABLE -->
     <div class="row m-0">
         <div class="col col-6 m-0 p-0">
             <img src="images/hojitas.png" style="width: 100%;">
         </div>
-        <div class="col col-6 m-0 p-0" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1500">
-            <div style="padding-top: 15%; width: 110%; z-index:3; position: relative; margin-left: -10%;">
+        <div class="col col-6 m-0 p-0" data-aos="fade-left" data-aos-offset="100" data-aos-duration="3000">
+            <div class="div-imagen-trayectoria">
                 <div class="padding-bt-cuadros-verdes" style="background-image: url(images/fondo-verde-3.png);">
                     <p class="titulo-excelencia pt-5 padding-lr-cuadros-verdes">
                         CULTIVO SUSTENTABLE
@@ -383,26 +406,32 @@
         </div>
     </div>
 
-    <!-- separador -->
     <div class="separador"></div>
 
     <a name="contacto"></a>
     <!--contacto-->
-    <p class="pt-5 pb-5 verde-oscuro text-center fontMontserrat" style="font-size:3rem; letter-spacing: 2px;">
+    <p class="pt-5 pb-5 text-center titulo-contactanos">
         CONTACT&Aacute;NOS
     </p>
     <div class="row mb-5">
         <div class="col col-md-2"></div>
-        <div class="col col-md-4 pt-5 m-0" style="background-image: url(images/fondo-verde-2.png); 
-        color: #ffffff; padding-left: 80px; padding-right: 80px; font-size: 1.4rem; ">
-            <p class="mb-0 pt-2"><i class="bi bi-geo-alt" style="font-size: 2rem; font-weight:700;"></i></p>
-            <p class="fontMontserrat500 mb-0" style="letter-spacing: 3px;">MAESTRA REN&Eacute; 301,</p>
-            <p class="fontMontserratLight mb-0" style="letter-spacing: 2px;">Pareditas, San Carlos</p>
-            <p class="fontMontserratLight" style="letter-spacing: 2px;">Mendoza.</p>
-            <hr style="height: 3px; background-color: #ffffff; ">
-            <p class="fontMontserratLight" style="margin-bottom: 80px;">info@aldodonnantuoni.com</p>
+        <div class="col col-md-4 pt-5 m-0 cuadro-verde-contactanos">
+            <p class="mb-0 pt-2">
+                <i class="bi bi-geo-alt icono-geo"></i>
+            </p>
+            <p class="fontMontserrat500 mb-0" style="letter-spacing: 3px;">
+                MAESTRA REN&Eacute; 301,
+            </p>
+            <p class="fontMontserratLight mb-0" style="letter-spacing: 2px;">
+                Pareditas, San Carlos
+            </p>
+            <p class="fontMontserratLight" style="letter-spacing: 2px;">
+                Mendoza.
+            </p>
+            <div class="linea-blanca-larga" style="margin-bottom: 50%;"></div>
         </div>
-        <div class="col col-md-4 text-center cuadro-mapa m-0" style="background-image: url(images/fondo-verde-2.png);">
+        <div class="col col-md-4 text-center cuadro-mapa m-0" 
+            style="background-image: url(images/fondo-verde-2.png);">
             <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d423673.13758550887!2d-69.071477!3d-33.942507000000006!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sus!4v1714266059467!5m2!1ses!2sus" 
                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
@@ -415,7 +444,7 @@
 
   <!-- PIE DE PAGINA -->
   <div class="row">
-    <div class="col col-12 text-center col-md-7 text-md-start pie-de-pagina">
+    <div class="col col-12 text-center col-md-8 text-md-start pie-de-pagina">
         <a href="#home" class="pie-item">INICIO</a>
               &nbsp;&nbsp;<font class="pipeline">|</font>&nbsp;&nbsp;
         <a href="#empresa" class="pie-item">NUESTRA EMPRESA</a>
@@ -426,7 +455,7 @@
               &nbsp;&nbsp;<font class="pipeline">|</font>&nbsp;&nbsp;
         <a href="#contacto" class="pie-item">CONTACTO</a>
     </div>
-    <div class="col col-12 text-center col-md-5 text-md-end pie-de-pagina">
+    <div class="col col-12 text-center col-md-4 text-md-end pie-de-pagina">
       <a href="https://www.instagram.com/donnantuoni_oregano/" target="_blank">
           <i class="bi bi-instagram red-pie-de-pagina"></i></a>
       &nbsp;&nbsp;         
@@ -440,10 +469,11 @@
           <i class="bi bi-whatsapp red-pie-de-pagina"></i></a>
   </div>
 
-</div>  
-<div class="text-center pt-4 pb-3 fontMontserrat500 verde-muy-oscuro" style="background-color: rgb(201, 196, 196);">
+</div> 
+<div class="separador-gris"></div> 
+<!--<div class="text-center pt-4 pb-3 fontMontserrat500 verde-muy-oscuro" style="background-color: rgb(201, 196, 196);">
   Aldo Donnantuoni © 2024 
-</div>  
+</div> --> 
 
 </div> <!-- fin container fluid -->
 

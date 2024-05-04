@@ -75,6 +75,12 @@ body{
   height: 40px;
 }
 
+.separador-gris {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(201, 196, 196);
+}
+
 .barra-logo {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -156,9 +162,18 @@ li {
 
 .icono-sobre-imagen {
   position: absolute;
-  top: 40px;
-  right: 60px;
-  width: 60px;  
+  top: 30px;
+  right: 70px;
+}
+
+.whatsapp-carousel {
+  font-size: 3rem !important; 
+  color:#ffffff !important;
+}
+
+.whatsapp-carousel-verde {
+  font-size: 3rem !important; 
+  color:#76871E !important;
 }
 
 .texto-home {
@@ -265,6 +280,21 @@ li {
   background-size: 100%;  
 }
 
+.div-imagen-excelencia {
+  padding-top: 15%; 
+  width: 110%; 
+  z-index:2; 
+  position: relative;
+}
+
+.div-imagen-trayectoria {
+  padding-top: 15%; 
+  width: 110%; 
+  z-index:3; 
+  position: relative; 
+  margin-left: -10%;
+}
+
 /* cuadros verdes */
 .padding-lr-cuadros-verdes {
   padding-left: 12%; 
@@ -316,10 +346,27 @@ li {
 
 /* EL OREGANO */
 
+.infaltable {
+  padding-left: 40px; 
+  margin-right: 0px; 
+  height: -webkit-fill-available;
+}
+
 .texto-infaltable {
   font-family: 'PlayfairDisplayRegular', sans-serif ; 
   font-size: 2rem; 
   color: white;
+}
+
+.imagen-vapor {
+  width: 100%; 
+  height: -webkit-fill-available;
+}
+
+.imagen-oregano-horizontal {
+  width: 100%; 
+  padding-left: 30px; 
+  height: -webkit-fill-available;
 }
 
 .texto-nos-define {
@@ -350,21 +397,13 @@ li {
   background-image: url(../images/amor.png);
 }
 
-.linea-verde {
-  background-color: #76871E;  
-  height: 3px;
-  max-width: 10%;  
-  padding: 0;
-  margin: 100px;
-}
 
 .texto-circulo-verde {
   font-family: 'Montserrat-500', sans-serif ;    
   font-size: 1rem;
   line-height: 1.5;
   color: #76871E;  
-  border-bottom: 2px solid #76871E;
-  margin: 100px;
+  border-bottom: 2px solid  #76871E;
 }
       
 .texto-circulo {
@@ -376,9 +415,38 @@ li {
 
 /* CONTACTENOS */
 
+.titulo-contactanos {
+  font-family: 'Montserrat-500', sans-serif ;   
+  font-size:3rem; 
+  color: #76871E;  
+  letter-spacing: 2px;
+}
+
+.cuadro-verde-contactanos {
+  background-image: url(../images/fondo-verde-2.png); 
+  color: #ffffff; 
+  padding-left: 80px; 
+  padding-right: 80px; 
+  font-size: 1.4rem;
+}
+
+.icono-geo {
+  font-size: 2rem; 
+  font-weight:700;
+}
+
+.linea-blanca-larga {
+  background-color: #ffffff;
+  height: 4px;
+  max-width: 100%;  
+  padding: 0;
+  margin-left: 0%;
+}
+
 .cuadro-mapa {
   padding: 40px;
 }
+
 .pie-de-pagina {
   background-color: rgb(201, 196, 196);
   margin-top: 0px;
@@ -396,6 +464,7 @@ li {
   font-family: 'Montserrat-Regular', sans-serif ;
   font-size: 1rem;  
   text-decoration: none;
+  color:#000000;
   }
 
 .pie-item:hover {
@@ -416,8 +485,6 @@ li {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text; 
-  /*color: #76871E;
-  transform: scale(1.2);*/
 }
 
 /*-------------------------------------------------------------*/
@@ -616,6 +683,12 @@ table.centrada {
     width: 100%;
     height: 70px;
   }
+
+  .separador-gris {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(201, 196, 196);
+  }
      
     .barra-logo {
       padding-top: 30px;
@@ -670,9 +743,19 @@ table.centrada {
     .icono-sobre-imagen {
       position: absolute;
       top: 40px;
-      right: 65px;
-      width: 80px;  
+      right: 75px; 
     }
+
+    .whatsapp-carousel {
+      font-size: 4rem !important; 
+      color:#ffffff !important;
+    }
+
+    .whatsapp-carousel-verde {
+      font-size: 4rem !important; 
+      color:#76871E  !important;
+    }
+    
 
     .texto-home {
       position: absolute;
@@ -784,5 +867,23 @@ table.centrada {
     }
     
     /* CONTACTENOS */
+
+    .titulo-contactanos {
+      font-family: 'Montserrat-500', sans-serif ;   
+      font-size:4.2rem; 
+      color: #76871E;  
+      letter-spacing: 2px;
+    }
+
+    .cuadro-verde-contactanos {
+      padding-left: 90px; 
+      padding-right: 90px; 
+      font-size: 2.3rem;
+    }
+
+    .icono-geo {
+      font-size: 3rem; 
+      font-weight:700;
+    }
 }
 

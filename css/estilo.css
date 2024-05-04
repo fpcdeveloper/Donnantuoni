@@ -376,6 +376,17 @@ li {
   font-size: 1.8rem;
 }
 
+.cards-circulo {
+  padding-left: 10%; 
+  padding-right: 10%;
+}
+
+.cada-card-circulo {
+  text-align:center; 
+  color:transparent; 
+  border: none;
+}
+
 .foto-circulo {
   width: 200px;
   height: 200px;        
@@ -403,14 +414,25 @@ li {
   font-size: 1rem;
   line-height: 1.5;
   color: #76871E;  
-  border-bottom: 2px solid  #76871E;
+  /*border-bottom: 2px solid  #76871E;
+  margin:0px !important;*/
 }
-      
+ 
+.linea-verde {
+  background-color: #76871E;
+  height: 3px;
+  max-width: 70%;  
+  padding: 0px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .texto-circulo {
   font-family: 'PlayfairDisplayRegular', sans-serif ; 
   font-style: italic; 
   font-weight: bold; 
   font-size: 1rem;
+  color:#000000;
 }
 
 /* CONTACTENOS */
@@ -862,9 +884,10 @@ table.centrada {
       font-size: 1.8rem;
       line-height: 1.5;
       color: #76871E;  
-      border-bottom: 2px solid #76871E;
-      margin: 100px;
+      /*border-bottom: 2px solid #76871E;
+      margin: 100px;*/
     }
+
     
     /* CONTACTENOS */
 

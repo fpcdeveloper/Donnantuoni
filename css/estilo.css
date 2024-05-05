@@ -448,6 +448,11 @@ li {
   letter-spacing: 2px;
 }
 
+.contenedor-contacto {
+  padding-left: 10%; 
+  padding-right: 10%;
+}
+
 .cuadro-verde-contactanos {
   background-image: url(../images/fondo-verde-2.png); 
   color: #ffffff; 
@@ -722,6 +727,11 @@ li {
   .titulo-contactanos {
     font-family: 'Montserrat-500', sans-serif ;   
     font-size:2rem; 
+  }
+
+  .contenedor-contacto {
+    padding-left: 10%; 
+    padding-right: 10%;
   }
 
   .linea-blanca-larga {

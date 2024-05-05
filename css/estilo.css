@@ -82,6 +82,7 @@ body{
 }
 
 .barra-logo {
+  text-align: center !important;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 70px;
@@ -188,7 +189,6 @@ li {
   line-height: 0.9;
   letter-spacing: 1px;
   margin-bottom: 10px;
-
 }
 
 .en-la-provincia-home {
@@ -314,7 +314,6 @@ li {
   letter-spacing: 1px;
 }
 
-
 .texto-excelencia {
     font-family: 'Montserrat-Light', sans-serif ;    
     font-size: 1rem;
@@ -345,6 +344,11 @@ li {
 }
 
 /* EL OREGANO */
+
+.div-infaltable {
+  display:flex; 
+  flex-direction: column;
+}
 
 .infaltable {
   padding-left: 40px; 
@@ -463,6 +467,7 @@ li {
   max-width: 100%;  
   padding: 0;
   margin-left: 0%;
+  margin-bottom: 50%;
 }
 
 .cuadro-mapa {
@@ -509,178 +514,7 @@ li {
   background-clip: text; 
 }
 
-/*-------------------------------------------------------------*/
-/* la excelencia que nos eleva...*/
-.posicion-1 {
-  position: absolute;
-  top: 50%;
-  left: 55%; 
-  color:rgb(51, 50, 50);     
-}
-
-.mov1 {
-  animation-name: mov1-animation;
-  animation-duration: 5s;
-  animation: mov1-animation 5s;
-  animation-timing-function: ease-in;
-}
-
-@keyframes mov1-animation {
-  from {left: 55%; color:transparent;}
-  to {left: 55%; color: black;}
-}
-
-/* nos conduce a alcanzar */
-.posicion-2 {
-  position: absolute;
-  top: 61%;
-  left: 13%;    
-  color:rgb(51, 50, 50);    
-}
-
-.mov2 {
-  animation-name: mov2-animation;
-  animation-duration: 4s;
-  animation: mov2-animation 4s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes mov2-animation {
-  from {top: 70%; color:transparent;}
-  to {top: 61%; color:black;}
-}
-
-/* nuestros mayores objetivos */
-.posicion-3 {
-  position: absolute;
-  top: 50%;
-  left: 58%; 
-  color:rgb(51, 50, 50);       
-}
-
-.mov3 {
-  animation-name: mov3-animation;
-  animation-duration: 4s;
-  animation: mov3-animation 4s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes mov3-animation {
-  from {top: 40%; color:transparent;}
-  to {top: 50%; color:black;}
-}
-
-/* esencia empresarial */
-.posicion-4 {
-  position: absolute;
-  top: 47%;    
-  color: white;    
-}
-
-.mov4 {
-  animation-name: mov4-animation;
-  animation-duration: 8s;
-  animation: mov4-animation 8s;
-  animation-timing-function: ease-in;
-}
-
-@keyframes mov4-animation {
-  from {top: 47%; color:transparent;}
-  to {top: 47%; color: white;}
-}
-
-
-table.centrada {
-  width:70%; 
-  margin-left:15%; 
-  margin-right:15%;
-}
-
-
-.equipoejecutivo {
-  background-color: #242c34;
-  background-image: linear-gradient(135deg, #242c34,#36424e);
-}
-
-:root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: #ffffff;
-	--c2: #242c34;
-}
-
-.equipo-card {
-  text-align:center; 
-  color:gray; 
-  font-family: 'Bellota-Regular';     
-  border: 5px solid transparent;
-}
-
-.equipo-card:hover {
-  color:#ffffff;
-  border: 5px solid;
-  /*  border-image: linear-gradient(135deg, #242c34,white ) 1;  */
-  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-  animation: borderRotate var(--d) linear  ; 
-}
-
-@keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 90deg;
-  inherits: true;
-}
-
-@property --gradX {
-  syntax: '<percentage>';
-  initial-value: 50%;
-  inherits: true;
-}
-
-@property --gradY {
-  syntax: '<percentage>';
-  initial-value: 0%;
-  inherits: true;
-}
-
-.equipo-card-nombre {    
-  font-size: 1.3rem;
-}
-
-.equipo-card-nombre::after{
-  font-family: 'Bellota-Regular', sans-serif ;  
-  display:block;
-  content: '';
-  border-bottom: solid 2px #c0ad98; 
-  transform: scaleX(0);  
-  transition: transform 800ms ease-in-out;
-}
-
-.equipo-card-nombre:hover:after {
-  transform: scaleX(0.8);
-}
-
-
-.linea-iconos-contacto {
-  position: relative; 
-  display: inline-block;
-  top: 35%; 
-  padding-bottom: 10%; 
-  left: 0px;
-  text-align: center;
-  color: white; 
-  font-size: 4rem; 
-  letter-spacing: 80px;
-  width:100%;
-}
-  
+ 
 .zoom {
   transition: transform .8s; 
 }
@@ -692,8 +526,198 @@ table.centrada {
 
 /*--------------------------------------------- CELULAR -------------------------------------------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 771px) {
 
+  .navbar {
+    --bs-navbar-brand-margin-end: 0rem;
+  }
+
+  .barra-logo {
+    text-align: left !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    margin-left: 0px !important;
+  }
+
+  .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .imagenDA {
+    width: 200px;
+  }
+  
+  .textoDA {
+    font-weight: bold; 
+    font-size: 0.8rem; 
+    letter-spacing: 1px;
+  }
+
+  .burger {
+    width: 70px; 
+    padding-right: 15px;
+  }
+
+  .icono-sobre-imagen {
+    /*position: absolute;
+    top: 15px;
+    right: 25px;*/
+    display: none;
+  }
+
+  .texto-home {
+    position: absolute;
+    top: 40px;
+  }
+  
+  .nos-encontramos-home {
+    font-family: 'PlayfairDisplayRegular', sans-serif ;    
+    font-size: 1.7rem;
+    color: #ffffff;
+    line-height: 0.9;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .en-la-provincia-home {
+    font-family: 'Montserrat-Light', sans-serif ;    
+    font-size: 0.8rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .titulo-fundador {
+    font-family: 'PlayfairDisplayRegular', sans-serif ;    
+    font-size: 1.8rem;
+    padding-top: 15px !important;
+  } 
+
+  .texto-fundador {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+ 
+  .bg-fundador {
+    background-image: url(../images/fundador.jpg); 
+    background-size: cover;
+    height: 200px;
+  }
+
+  .texto-fundador-ejemplo {
+    font-family: 'PlayfairDisplayRegular', sans-serif;
+    font-size: 0.7rem; 
+    color:rgb(80, 77, 77);
+    padding-top: 50px;
+    padding-left: 160px;
+  }
+  
+  .cita-fundador {
+    padding-left: 160px;
+    margin-top: 0px;
+    width: 80% !important;
+  }
+
+  .inchausti-fundador {
+    font-family: 'PlayfairDisplayRegular', sans-serif;
+    font-size: 1.1rem;
+    font-style: italic; 
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .titulo-excelencia {
+    font-family: 'PlayfairDisplayRegular', sans-serif ;    
+    font-size: 2rem;
+    padding-top: 10px !important;
+  }
+  
+  .texto-excelencia {
+      font-family: 'Montserrat-Light', sans-serif ;    
+      font-size: 1rem;
+      padding-right: 40px;
+  }
+    
+  .div-imagen-excelencia {
+    padding-top: 5%; 
+    width: 100%; 
+    z-index:2; 
+    position: relative;
+  }
+  
+  .div-imagen-trayectoria {
+    padding-top: 0%; 
+    width: 100%; 
+    z-index:3; 
+    position: relative; 
+    margin-left: 0%;
+  }
+
+  .cuadro-texto {
+    font-family: 'OpenSans-Regular', sans-serif; 
+    font-style: italic;
+    font-size: 1.2rem;
+    color:#ffffff;
+    padding: 6%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 10%;  
+    border: 3px solid;  
+  }
+
+  .imagen-oregano-horizontal {
+    display: none;
+  }
+
+  .div-infaltable {
+    width: 100%;
+  }
+
+  .infaltable {
+    padding-left: 50px;
+    padding-right: 40px;
+    margin-top: 20px;
+  }
+
+  .texto-infaltable {
+    font-family: 'PlayfairDisplayRegular', sans-serif ; 
+    font-size: 1.5rem; 
+  }
+
+  .texto-nos-define {
+    font-family: 'PlayfairDisplayRegular', sans-serif ; 
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 1.3rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .texto-circulo-verde {
+    font-family: 'Montserrat-500', sans-serif ;    
+    font-size: 1.3rem;
+  }
+   
+  
+  .texto-circulo {
+    font-family: 'PlayfairDisplayRegular', sans-serif ; 
+    font-style: italic; 
+    font-weight: bold; 
+    font-size: 1.2rem;
+    color:#000000;
+  }
+
+  .titulo-contactanos {
+    font-family: 'Montserrat-500', sans-serif ;   
+    font-size:2rem; 
+  }
+
+  .linea-blanca-larga {
+    margin-bottom: 10%;
+  }
 
 }
 

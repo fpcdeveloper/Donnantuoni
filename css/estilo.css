@@ -560,6 +560,15 @@ li {
     padding-right: 15px;
   }
 
+  .sidebar {
+    width: 50% !important;
+  }
+
+  .sidebar-item {
+    font-family: 'Montserrat-Regular', sans-serif !important;
+    font-size: 0.9rem; 
+  }
+
   .icono-sobre-imagen {
     /*position: absolute;
     top: 15px;

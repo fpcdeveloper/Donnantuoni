@@ -24,6 +24,17 @@
   src: url("../fonts/PlayfairDisplayRegular.ttf");
 }  
 
+@font-face {
+  font-family: "ParmaRegular";
+  src: url("../fonts/ParmaPetit-Normal.ttf");
+}  
+
+@font-face {
+  font-family: "AvenirMedium";
+  src: url("../fonts/AvenirLTStd-Roman.otf");
+}  
+
+
 
 html {
   height: 100%;
@@ -54,6 +65,7 @@ body{
 .fontPlayfair {
    font-family: 'PlayfairDisplayRegular', sans-serif;
 }
+
 
 .verde-muy-oscuro {
   color: #506c34;
@@ -92,7 +104,22 @@ body{
   width: 70px;
 }
 
-.imagenDA {
+.textoLogo {
+  font-family: 'ParmaRegular', sans-serif !important;
+  font-size: 2.4rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.textoPyA {
+  font-family: 'AvenirMedium', sans-serif !important;  
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  font-weight:700;
+}
+
+
+/*.imagenDA {
   width: 250px;
 }
 
@@ -100,7 +127,8 @@ body{
   font-weight: bold; 
   font-size: 0.7rem; 
   letter-spacing: 2px;
-}
+}*/
+
 
 .sidebar {
   width: 35% !important;
@@ -264,6 +292,7 @@ li {
   box-shadow: 0px 1px 3px gray;
   width: 250px !important; 
   background-color: #d3d3d3; 
+  text-decoration: none;
 }
 
 .boton:hover{
@@ -550,6 +579,15 @@ li {
     margin-bottom: 10px;
   }
   
+  .textoLogo {
+    font-size: 1.8rem;
+  }
+  
+  .textoPyA {
+    font-size: 0.6rem;
+  }
+
+  /*
   .imagenDA {
     width: 200px;
   }
@@ -558,7 +596,9 @@ li {
     font-weight: bold; 
     font-size: 0.8rem; 
     letter-spacing: 1px;
-  }
+  }*/
+
+
 
   .burger {
     width: 70px; 
@@ -765,6 +805,15 @@ li {
       width: 120px;      
     }
 
+    .textoLogo {
+      font-size: 2.7rem;
+    }
+    
+    .textoPyA {
+      font-size: 0.8rem;
+    }
+
+    /*
     .imagenDA {
       width: 330px;
     }
@@ -773,7 +822,7 @@ li {
       font-weight: bold; 
       font-size: 1rem; 
       letter-spacing: 2px;
-    }
+    }*/
 
 
     .burger {

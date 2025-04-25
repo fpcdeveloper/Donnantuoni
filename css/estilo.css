@@ -220,6 +220,15 @@ li {
   margin-bottom: 10px;
 }
 
+.nos-encontramos-home-verde {
+  font-family: 'PlayfairDisplayRegular', sans-serif ;    
+  font-size: 3rem;
+  color:#76871E !important;
+  line-height: 0.9;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
 .en-la-provincia-home {
   font-family: 'Montserrat-Light', sans-serif ;    
   font-size: 1rem;
@@ -265,7 +274,7 @@ li {
   font-family: 'PlayfairDisplayRegular', sans-serif;
   font-size: 1.8rem; 
   color:rgb(80, 77, 77);
-  padding-top: 150px;
+  padding-top: 100px;
   padding-left: 550px;
 }
 
@@ -636,6 +645,15 @@ li {
     letter-spacing: 1px;
     margin-bottom: 10px;
   }
+
+  .nos-encontramos-home-verde {
+    font-family: 'PlayfairDisplayRegular', sans-serif ;    
+    font-size: 1.7rem;
+    color:#76871E !important;
+    line-height: 0.9;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
   
   .en-la-provincia-home {
     font-family: 'Montserrat-Light', sans-serif ;    
@@ -665,12 +683,12 @@ li {
     font-family: 'PlayfairDisplayRegular', sans-serif;
     font-size: 0.7rem; 
     color:rgb(80, 77, 77);
-    padding-top: 50px;
-    padding-left: 160px;
+    padding-top: 30px;
+    padding-left: 220px;
   }
   
   .cita-fundador {
-    padding-left: 160px;
+    padding-left: 220px;
     margin-top: 0px;
     width: 80% !important;
   }
@@ -885,6 +903,13 @@ li {
       margin-bottom: 15px;
     }
 
+    .nos-encontramos-home-verde {
+      font-size: 4.5rem;
+      line-height: 1;
+      margin-bottom: 15px;
+      color:#76871E  !important;
+    }
+
     .en-la-provincia-home {      
       font-size: 1.5rem;
     }
@@ -907,7 +932,7 @@ li {
 
     .texto-fundador-ejemplo {
       font-size: 2.5rem;      
-      padding-top: 200px;
+      padding-top: 150px;
       padding-left: 750px;
     }
 

@@ -206,6 +206,11 @@ li {
   color:#76871E !important;
 }
 
+.brillo-80 {
+  filter: brightness(80%);
+}
+
+
 .texto-home {
   position: absolute;
   top: 200px;

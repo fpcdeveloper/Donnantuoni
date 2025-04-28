@@ -46,6 +46,14 @@ body{
   background: #ffffff;          
 } 
 
+.mp-0 {
+  padding-left: 0px; 
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+
 .fontMontserrat{
   font-family: 'Montserrat-Regular', sans-serif; 
 }
@@ -201,13 +209,19 @@ li {
   color:#ffffff !important;
 }
 
+
+
 .whatsapp-carousel-verde {
   font-size: 3rem !important; 
   color:#76871E !important;
 }
 
 .brillo-80 {
-  filter: brightness(80%);
+  filter: brightness(80%);  
+}
+
+.brillo-100 {
+  filter: brightness(100%) !important;
 }
 
 
@@ -498,7 +512,7 @@ li {
 }
 
 .cuadro-verde-contactanos {
-  background-image: url(../images/fondo-verde-2.png); 
+  background-image: url(../images/fondo-verde-1.png); 
   color: #ffffff; 
   padding-left: 80px; 
   padding-right: 80px; 
